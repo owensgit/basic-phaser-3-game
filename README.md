@@ -2,6 +2,10 @@
 
 This is a simple platform game made using [Phaser](https://phaser.io/), based on the the [Making Your First Game](https://phaser.io/tutorials/making-your-first-phaser-3-game/part1) tutorial on their website, with some modifications added and also different graphics from [Craftpix](https://craftpix.net) and others. The game runs in a web browser and written in JavaScript.
 
+<img src="assets/game-screenshot.jpg" alt="Screenshot of the game" width="600"/>
+
+-------
+
 ## Running the game
 
 `npm run start`
