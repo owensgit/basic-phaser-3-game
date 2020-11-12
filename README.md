@@ -4,7 +4,7 @@ This is a simple platform game made using [Phaser](https://phaser.io/), based on
 
 <img src="assets/game-screenshot.jpg" alt="Screenshot of the game" width="600"/>
 
--------
+---
 
 ## Running the game
 

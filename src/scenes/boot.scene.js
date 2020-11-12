@@ -7,18 +7,24 @@ export class BootScene extends Phaser.Scene {
   textStyle = {
     align: 'center',
     fixedWidth: 800,
-    fixedHeight: 100
-  }
+    fixedHeight: 100,
+  };
 
   create() {
-    this.add.text(0, 100, 'Death by Squirrel', { 
-      fontSize: '40px', fill: '#FFF', ...this.textStyle
+    this.add.text(0, 100, 'Death by Squirrel', {
+      fontSize: '40px',
+      fill: '#FFF',
+      ...this.textStyle,
     });
-    this.add.text(0, 300, this.instructions,
-      { fontSize: '20px', fill: '#FFF', ...this.textStyle
+    this.add.text(0, 300, this.instructions, {
+      fontSize: '20px',
+      fill: '#FFF',
+      ...this.textStyle,
     });
-    this.add.text(0, 400, 'Press SPACE to start',
-      { fontSize: '20px', fill: '#FFF', ...this.textStyle
+    this.add.text(0, 400, 'Press SPACE to start', {
+      fontSize: '20px',
+      fill: '#FFF',
+      ...this.textStyle,
     });
     this.cursors = this.input.keyboard.createCursorKeys();
   }

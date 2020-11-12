@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.bundle.js'
+    filename: 'main.bundle.js',
   },
   // Loaders...
   module: {
@@ -19,15 +19,13 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-proposal-class-properties']
-          }
-        }
+            plugins: ['@babel/plugin-proposal-class-properties'],
+          },
+        },
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          'file-loader',
-        ],
+        use: ['file-loader'],
       },
     ],
   },
@@ -35,12 +33,10 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyPlugin({
-      patterns: [
-        {from: './src/assets', to: 'assets'},
-      ]
+      patterns: [{ from: './src/assets', to: 'assets' }],
     }),
     new HtmlWebpackPlugin({
       title: "Simple Phaser Game"
-    })
+    }),
   ],
 };
