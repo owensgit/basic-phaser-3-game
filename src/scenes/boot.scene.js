@@ -11,7 +11,7 @@ export class BootScene extends Phaser.Scene {
   };
 
   create() {
-    this.add.text(0, 100, 'Death by Squirrel', {
+    this.add.text(0, 100, 'Simple Phaser Game', {
       fontSize: '40px',
       fill: '#FFF',
       ...this.textStyle,
